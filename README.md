@@ -29,6 +29,7 @@ This is a test assignment for Remarcable. The goal is to create a simple web app
 - The credentials for `http://localhost:8000/admin` are:
   **Username:** `admin`
   **Password:** `admin`
+- AI tools were used sparingly as a resource, primarily to assist with test implementation, but the majority of the work was completed independently.
 
 # To go further
 As with any project (especially ones with tight deadlines like this one), some further improvements could be made to this codebase. Here are a few I thought of during development:
