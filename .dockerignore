@@ -1,0 +1,10 @@
+README.md
+setup_and_install.bat
+setup_and_install.sh
+venv
+.ropeproject
+.idea
+.vscode
+.dockerignore
+/__pycache__
+.gitignore

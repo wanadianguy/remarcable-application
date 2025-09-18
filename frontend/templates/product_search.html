@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Catalog</title>
+		<style>
+			body {
+				font-family:
+					system-ui,
+					-apple-system,
+					Segoe UI,
+					Roboto,
+					sans-serif;
+				margin: 24px;
+			}
+			form {
+				display: grid;
+				gap: 12px;
+				margin-bottom: 16px;
+			}
+			fieldset {
+				border: 1px solid #ddd;
+				padding: 12px;
+			}
+			legend {
+				font-weight: 600;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+			li {
+				padding: 8px 0;
+				border-bottom: 1px solid #eee;
+			}
+			.muted {
+				color: #666;
+			}
+			.filters {
+				display: grid;
+				gap: 12px;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Filters (reset after clicking filter button)</h1>
+
+		<form method="get">
+			<div class="filters">
+				<label>
+					Description (can just be a snipet)
+					<input type="text" name="description" value="" autofocus />
+				</label>
+
+				<label>
+					Category
+					<select name="category">
+						<option value="">-- All --</option>
+						{% for category in categories %}
+						<option value="{{ category.name }}">
+							{{ category.name }}
+						</option>
+						{% endfor %}
+					</select>
+				</label>
+
+				<fieldset>
+					<legend>Tags</legend>
+					{% for tag in tags %}
+					<label style="display: block">
+						<input
+							type="checkbox"
+							name="tag"
+							value="{{ tag.name }}"
+						/>
+						{{ tag.name }}
+					</label>
+					{% endfor %}
+				</fieldset>
+			</div>
+
+			<button type="submit">Filter</button>
+		</form>
+
+		<h2>Results ({{ products|length }})</h2>
+		<ul>
+			{% for product in products %}
+			<li>
+				<strong>{{ product.name }}</strong>
+				<span class="muted">— {{ product.category }}</span><br />
+				{% if product.description %}
+				<div>{{ product.description }}</div>
+				{% endif %} {% if product.tags %}
+				<div class="muted">Tags: {{ product.tags|join:", " }}</div>
+				{% endif %}
+			</li>
+			{% empty %}
+			<li class="muted">No product found</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+services:
+    application:
+        build:
+            context: .
+            dockerfile: application.Dockerfile
+        container_name: remarcable-application
+        ports:
+            - "8000:8000"
+        command: python manage.py runserver 0.0.0.0:8000
