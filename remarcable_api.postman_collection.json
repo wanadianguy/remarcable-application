@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "0732448e-77a5-4327-9671-464499be4157",
+		"name": "remarcable_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18628735"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "getAllCategories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postCategories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categories\": [\n        {\n            \"name\": \"Electronics\",\n            \"description\": \"Devices and gadgets\"\n        },\n        {\n            \"name\": \"Books\",\n            \"description\": \"Printed and digital books\"\n        },\n        {\n            \"name\": \"Clothing\",\n            \"description\": \"Men's and women's apparel\"\n        },\n        {\n            \"name\": \"Home & Kitchen\",\n            \"description\": \"Appliances, decor, and furniture\"\n        },\n        {\n            \"name\": \"Sports\",\n            \"description\": \"Sporting goods and outdoor equipment\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCategoriesByName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"names\": [\"Electronics\", \"Books\", \"Clothing\", \"Home & Kitchen\", \"Sports\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"item": [
+				{
+					"name": "getAllTags",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postTags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tags\": [\n        {\n            \"name\": \"New Arrival\",\n            \"description\": \"Recently added products\"\n        },\n        {\n            \"name\": \"On Sale\",\n            \"description\": \"Discounted products\"\n        },\n        {\n            \"name\": \"Popular\",\n            \"description\": \"Best-selling items\"\n        },\n        {\n            \"name\": \"Limited Edition\",\n            \"description\": \"Special or exclusive products\"\n        },\n        {\n            \"name\": \"Eco-friendly\",\n            \"description\": \"Environmentally friendly products\"\n        },\n        {\n            \"name\": \"Luxury\",\n            \"description\": \"High-end products\"\n        },\n        {\n            \"name\": \"Budget\",\n            \"description\": \"Affordable options\"\n        },\n        {\n            \"name\": \"Gift\",\n            \"description\": \"Perfect for gifts\"\n        },\n        {\n            \"name\": \"Trending\",\n            \"description\": \"Currently trending products\"\n        },\n        {\n            \"name\": \"Exclusive\",\n            \"description\": \"Exclusive to our store\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTagsByName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"names\": [\"New Arrival\", \"On Sale\", \"Popular\", \"Limited Edition\", \"Eco-friendly\", \"Luxury\", \"Budget\", \"Gift\", \"Trending\", \"Exclusive\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/tags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"tags"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "postProducts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"products\": [\n        {\n            \"name\": \"Smartphone X100\",\n            \"description\": \"Latest model smartphone\",\n            \"price\": 999.99,\n            \"category\": \"Electronics\",\n            \"tags\": [\n                \"New Arrival\",\n                \"Popular\"\n            ]\n        },\n        {\n            \"name\": \"Wireless Headphones\",\n            \"description\": \"Noise-cancelling headphones\",\n            \"price\": 199.99,\n            \"category\": \"Electronics\",\n            \"tags\": [\n                \"On Sale\",\n                \"Trending\"\n            ]\n        },\n        {\n            \"name\": \"Python Programming Book\",\n            \"description\": \"Learn Python from scratch\",\n            \"price\": 29.99,\n            \"category\": \"Books\",\n            \"tags\": [\n                \"Popular\",\n                \"Gift\"\n            ]\n        },\n        {\n            \"name\": \"Cookbook Deluxe\",\n            \"description\": \"Delicious recipes\",\n            \"price\": 39.99,\n            \"category\": \"Books\",\n            \"tags\": [\n                \"New Arrival\",\n                \"Gift\"\n            ]\n        },\n        {\n            \"name\": \"Men's Leather Jacket\",\n            \"description\": \"Premium leather jacket\",\n            \"price\": 249.99,\n            \"category\": \"Clothing\",\n            \"tags\": [\n                \"Luxury\",\n                \"Trending\"\n            ]\n        },\n        {\n            \"name\": \"Women's Summer Dress\",\n            \"description\": \"Lightweight and colorful dress\",\n            \"price\": 59.99,\n            \"category\": \"Clothing\",\n            \"tags\": [\n                \"On Sale\",\n                \"Popular\"\n            ]\n        },\n        {\n            \"name\": \"Blender Pro 5000\",\n            \"description\": \"High-performance kitchen blender\",\n            \"price\": 129.99,\n            \"category\": \"Home & Kitchen\",\n            \"tags\": [\n                \"Popular\",\n                \"Trending\"\n            ]\n        },\n        {\n            \"name\": \"Ceramic Vase\",\n            \"description\": \"Elegant home decor vase\",\n            \"price\": 49.99,\n            \"category\": \"Home & Kitchen\",\n            \"tags\": [\n                \"Gift\",\n                \"Exclusive\"\n            ]\n        },\n        {\n            \"name\": \"Mountain Bike XT\",\n            \"description\": \"Durable mountain bike\",\n            \"price\": 799.99,\n            \"category\": \"Sports\",\n            \"tags\": [\n                \"New Arrival\",\n                \"Luxury\"\n            ]\n        },\n        {\n            \"name\": \"Yoga Mat Pro\",\n            \"description\": \"Non-slip yoga mat\",\n            \"price\": 39.99,\n            \"category\": \"Sports\",\n            \"tags\": [\n                \"Eco-friendly\",\n                \"Budget\"\n            ]\n        },\n        {\n            \"name\": \"Smartwatch Series 5\",\n            \"description\": \"Fitness tracking smartwatch\",\n            \"price\": 299.99,\n            \"category\": \"Electronics\",\n            \"tags\": [\n                \"Trending\",\n                \"Popular\"\n            ]\n        },\n        {\n            \"name\": \"Bluetooth Speaker\",\n            \"description\": \"Portable speaker with high-quality sound\",\n            \"price\": 79.99,\n            \"category\": \"Electronics\",\n            \"tags\": [\n                \"On Sale\",\n                \"Gift\"\n            ]\n        },\n        {\n            \"name\": \"Children's Story Book\",\n            \"description\": \"Illustrated bedtime stories\",\n            \"price\": 19.99,\n            \"category\": \"Books\",\n            \"tags\": [\n                \"Gift\",\n                \"Popular\"\n            ]\n        },\n        {\n            \"name\": \"Desk Lamp LED\",\n            \"description\": \"Energy-efficient desk lamp\",\n            \"price\": 34.99,\n            \"category\": \"Home & Kitchen\",\n            \"tags\": [\n                \"Trending\",\n                \"Budget\"\n            ]\n        },\n        {\n            \"name\": \"Running Shoes Pro\",\n            \"description\": \"High-performance running shoes\",\n            \"price\": 129.99,\n            \"category\": \"Sports\",\n            \"tags\": [\n                \"Popular\",\n                \"Exclusive\"\n            ]\n        },\n        {\n            \"name\": \"Women’s Handbag\",\n            \"description\": \"Stylish leather handbag\",\n            \"price\": 199.99,\n            \"category\": \"Clothing\",\n            \"tags\": [\n                \"Luxury\",\n                \"Gift\"\n            ]\n        },\n        {\n            \"name\": \"Espresso Machine\",\n            \"description\": \"Automatic coffee machine\",\n            \"price\": 399.99,\n            \"category\": \"Home & Kitchen\",\n            \"tags\": [\n                \"Luxury\",\n                \"Trending\"\n            ]\n        },\n        {\n            \"name\": \"Camping Tent\",\n            \"description\": \"4-person waterproof tent\",\n            \"price\": 149.99,\n            \"category\": \"Sports\",\n            \"tags\": [\n                \"Popular\",\n                \"Budget\"\n            ]\n        },\n        {\n            \"name\": \"Graphic T-shirt\",\n            \"description\": \"Casual cotton T-shirt\",\n            \"price\": 24.99,\n            \"category\": \"Clothing\",\n            \"tags\": [\n                \"Budget\",\n                \"Trending\"\n            ]\n        },\n        {\n            \"name\": \"E-reader Tablet\",\n            \"description\": \"Portable e-book reader\",\n            \"price\": 129.99,\n            \"category\": \"Electronics\",\n            \"tags\": [\n                \"Gift\",\n                \"New Arrival\"\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProductsById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ids\": [\"c6e2bcdc-648b-4006-8f52-fcb8986edf90\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductsByFilters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "description",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "tag",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "tag",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
