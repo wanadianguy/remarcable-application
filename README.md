@@ -18,10 +18,12 @@ This is a test assignment for Remarcable. The goal is to create a simple web app
 - Clone the project from the remote git repository.
 - While at the root of this project, run either `./your_script.sh` or `my_script.bat`.
   *(On Linux/MacOS, some privileges might cause issues, so you may need to run `chmod +x your_script.sh` first.)*
+- With a web browser, go to `http://localhost:8000`
 
 ### Via Docker
 - Clone the project from the remote git repository.
 - While at the root of this project, run `docker compose up -d`.
+- With a web browser, go to `http://localhost:8000`
 
 ## Additional information
 - The credentials for `http://localhost:8000/admin` are:
