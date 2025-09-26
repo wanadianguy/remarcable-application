@@ -4,7 +4,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = True
 
-SECRET_KEY = "remarcableapplication"
+SECRET_KEY = "catalogsecretkey"
 
 ALLOWED_HOSTS = []
 

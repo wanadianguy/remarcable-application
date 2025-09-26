@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "0732448e-77a5-4327-9671-464499be4157",
-		"name": "remarcable_api",
+		"name": "catalog",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18628735"
 	},
@@ -20,13 +20,9 @@
 						"url": {
 							"raw": "http://localhost:8000/categories",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"categories"
-							]
+							"path": ["categories"]
 						}
 					},
 					"response": []
@@ -48,13 +44,9 @@
 						"url": {
 							"raw": "http://localhost:8000/categories",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"categories"
-							]
+							"path": ["categories"]
 						}
 					},
 					"response": []
@@ -76,13 +68,9 @@
 						"url": {
 							"raw": "http://localhost:8000/categories",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"categories"
-							]
+							"path": ["categories"]
 						}
 					},
 					"response": []
@@ -103,13 +91,9 @@
 						"url": {
 							"raw": "http://localhost:8000/tags",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"tags"
-							]
+							"path": ["tags"]
 						}
 					},
 					"response": []
@@ -131,13 +115,9 @@
 						"url": {
 							"raw": "http://localhost:8000/tags",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"tags"
-							]
+							"path": ["tags"]
 						}
 					},
 					"response": []
@@ -159,13 +139,9 @@
 						"url": {
 							"raw": "http://localhost:8000/tags",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"tags"
-							]
+							"path": ["tags"]
 						}
 					},
 					"response": []
@@ -192,13 +168,9 @@
 						"url": {
 							"raw": "http://localhost:8000/products",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"products"
-							]
+							"path": ["products"]
 						}
 					},
 					"response": []
@@ -220,13 +192,9 @@
 						"url": {
 							"raw": "http://localhost:8000/products",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"products"
-							]
+							"path": ["products"]
 						}
 					},
 					"response": []
@@ -239,13 +207,9 @@
 						"url": {
 							"raw": "http://localhost:8000/products",
 							"protocol": "http",
-							"host": [
-								"localhost"
-							],
+							"host": ["localhost"],
 							"port": "8000",
-							"path": [
-								"products"
-							],
+							"path": ["products"],
 							"query": [
 								{
 									"key": "description",

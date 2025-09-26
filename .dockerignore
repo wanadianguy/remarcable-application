@@ -8,4 +8,4 @@ venv
 .dockerignore
 /__pycache__
 .gitignore
-remarcable_api.postman_collection.json
+catalog.postman_collection.json

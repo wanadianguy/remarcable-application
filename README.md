@@ -1,7 +1,7 @@
-# Remarcable Test Assignment
+# Catalog project
 
 ## Overview
-This is a test assignment for Remarcable. The goal is to create a simple web application that allows users to search for products based on their description, category, and tags.
+This is a small project using Django to simulate a catalog API. The goal is to create a simple web application that allows users to search for products based on their description, category, and tags.
 
 ## Requirements
 
@@ -29,17 +29,14 @@ This is a test assignment for Remarcable. The goal is to create a simple web app
 - The credentials for `http://localhost:8000/admin` are:
   **Username:** `admin`
   **Password:** `admin`
-- AI tools were used sparingly as a resource, primarily to assist with test implementation, but the majority of the work was completed independently.
 
 # To go further
-As with any project (especially ones with tight deadlines like this one), some further improvements could be made to this codebase. Here are a few I thought of during development:
+Some further improvements could be made to this codebase. Here are a few I thought of during development:
 
-- Enrich the API with more in-depth functionalities. Even though the requirements are respected, additional endpoints could be created to facilitate data handling and processing.
+- Enrich the API with more in-depth functionalities. Additional endpoints could be created to facilitate data handling and processing.
 - Use an external database to separate the API and database, improving security and scalability.
 - Improve the API's resiliency. Although most basic cases are covered, some more complex behaviors might still be missing.
-- Complete or refactor the test files to cover all functionalities and ensure future changes won’t break anything.
+- Complete or refactor the tests to cover all functionalities and ensure future changes won’t break anything.
 - Add some pagination to the API endpoints to handle large datasets efficiently.
 - Implement rate limiting to prevent abuse and ensure fair usage.
 - Add some caching mechanisms to improve performance and reduce load on the database.
-
-I'm sure there is much more to discuss regarding how to create a stronger codebase. If you'd like to send me suggestions or questions, please feel free to reach out by email at `william.denorme@icloud.com`.
